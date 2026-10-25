@@ -1,0 +1,70 @@
+<!-- Assignment 26: Annotate a screenshot explaining the box model of one of your own elements -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 26 - CSS Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #1e3a8a;
+        }
+
+        .margin {
+            background-color: #fde68a;
+            padding: 25px;
+            display: inline-block;
+            margin: 20px;
+        }
+
+        .border {
+            border: 5px solid #2563eb;
+            padding: 20px;
+            background-color: #bfdbfe;
+        }
+
+        .content {
+            background-color: #86efac;
+            padding: 20px;
+            color: #14532d;
+            font-weight: bold;
+        }
+
+        .label {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Box Model</h1>
+    <p>The CSS box model consists of Content, Padding, Border, and Margin.</p>
+
+    <div class="margin">
+        <div class="label">MARGIN</div>
+
+        <div class="border">
+            <div class="label">BORDER</div>
+
+            <div class="label">PADDING</div>
+
+            <div class="content">
+                CONTENT
+                <br>
+                My Box Model Example
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
