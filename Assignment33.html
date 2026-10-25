@@ -1,0 +1,119 @@
+<!--
+Assignment 33
+Question: Build a product-listing style layout using flex-wrap.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 33 - Product Listing</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e293b;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+
+        .product-card {
+            flex: 1 1 220px;
+            max-width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-image {
+            font-size: 60px;
+            background-color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #334155;
+        }
+
+        .price {
+            color: #2563eb;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Our Products</h1>
+
+    <div class="products">
+
+        <div class="product-card">
+            <div class="product-image">🎧</div>
+            <h2>Headphones</h2>
+            <p class="price">₹999</p>
+            <button>View Product</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">⌚</div>
+            <h2>Smart Watch</h2>
+            <p class="price">₹1,499</p>
+            <button>View Product</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">🎒</div>
+            <h2>Backpack</h2>
+            <p class="price">₹799</p>
+            <button>View Product</button>
+        </div>
+
+        <div class="product-card">
+            <div class="product-image">👟</div>
+            <h2>Sports Shoes</h2>
+            <p class="price">₹1,999</p>
+            <button>View Product</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
