@@ -1,0 +1,60 @@
+<!-- Assignment 24: Create a small design-token stylesheet (colours, font sizes) using CSS variables. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 24 - CSS Variables</title>
+
+    <style>
+        :root {
+            --primary-color: #17365d;
+            --secondary-color: #287271;
+            --background-color: #f0f4f8;
+            --text-color: #333333;
+
+            --small-font: 14px;
+            --medium-font: 18px;
+            --large-font: 30px;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+            font-size: var(--medium-font);
+            margin: 30px;
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-size: var(--large-font);
+        }
+
+        h2 {
+            color: var(--secondary-color);
+        }
+
+        p {
+            font-size: var(--small-font);
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>My CSS Design Tokens</h1>
+        <h2>About Me</h2>
+        <p>My name is Ayesha Nasir. I am pursuing BCA Artificial Intelligence, First Year, Section C.</p>
+        <p>This page uses CSS variables for colours and font sizes.</p>
+    </div>
+
+</body>
+</html>
