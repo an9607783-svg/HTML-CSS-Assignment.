@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 28 - Fix Overflow</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .content {
+            max-width: 100%;
+            overflow-wrap: anywhere;
+            padding: 15px;
+            background-color: lightblue;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        h1 {
+            color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--
+    Assignment 28:
+    Question: Fix a supplied page where overflow is breaking the layout.
+    -->
+
+    <div class="container">
+        <h1>Fixing Overflow Issues</h1>
+
+        <p>
+            This page demonstrates how to fix overflow problems
+            using CSS.
+        </p>
+
+        <div class="content">
+            This is a long text example:
+            https://example.com/thisisaverylongurlthatcouldbreakthelayout
+            The content will wrap properly inside the container.
+        </div>
+    </div>
+
+</body>
+</html>
