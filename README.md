@@ -8,3 +8,5 @@ What I am learning
 - CSS styling
 - Using VS Code
 - Git and GitHub# HTML-CSS-Assignment.
+
+  This repository is for practicing Git and GitHub Basics
