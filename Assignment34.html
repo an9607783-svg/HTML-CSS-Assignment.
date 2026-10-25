@@ -1,0 +1,157 @@
+<!--
+Assignment 34
+Question: Build a responsive Navbar + Hero section using Flexbox.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 34 - Navbar and Hero</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #1e293b;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 8%;
+            background-color: #1e293b;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            color: #93c5fd;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            min-height: 80vh;
+            padding: 50px 8%;
+            background-color: #eff6ff;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #475569;
+        }
+
+        .hero-content button {
+            margin-top: 15px;
+            padding: 12px 24px;
+            background-color: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #bfdbfe;
+            border-radius: 15px;
+            font-size: 100px;
+        }
+
+        @media (max-width: 650px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 35px 6%;
+            }
+
+            .hero-content h1 {
+                font-size: 32px;
+            }
+
+            .hero-image {
+                width: 100%;
+                min-height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to MyWebsite</h1>
+
+            <p>
+                Discover new ideas, learn new skills, and explore
+                exciting opportunities with us.
+            </p>
+
+            <button>Get Started</button>
+        </div>
+
+        <div class="hero-image">💻</div>
+    </section>
+
+</body>
+</html>
